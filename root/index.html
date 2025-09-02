@@ -4,147 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Indian Journal - Home</title>
-  <style>
-    body {
-      background: #f7fafc;
-      color: #24292f;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background: #1e3a8a;
-      color: #fff;
-      padding: 16px;
-      box-shadow: 0 2px 8px #0002;
-    }
-    .header-container {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header-title {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .nav-link {
-      color: #fff;
-      padding: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-    .gallery-container {
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background: #fff;
-      box-shadow: 0 1px 8px #0002;
-      margin-top: 8px;
-    }
-    .gallery-track {
-      display: flex;
-      width: max-content;
-      animation: scroll 20s linear infinite;
-    }
-    .gallery-track img {
-      width: 300px;
-      height: 180px;
-      object-fit: cover;
-      margin-right: 10px;
-      border-radius: 10px;
-    }
-    @keyframes scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-    .section {
-      background: #fff;
-      box-shadow: 0 2px 8px #0001;
-      padding: 40px 0;
-      margin: 16px 0;
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    .section h2, .section h3 {
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    .section p {
-      color: #444;
-      font-size: 1.08rem;
-    }
-    .articles {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 24px auto 0 auto;
-      padding: 0 16px;
-    }
-    .article-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px #0002;
-      overflow: hidden;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0;
-    }
-    .article-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-    .article-card .content {
-      padding: 16px;
-    }
-    .article-card h3 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .article-card p {
-      margin-bottom: 12px;
-      color: #555;
-    }
-    .read-more {
-      color: #1e3a8a;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .read-more:hover {
-      text-decoration: underline;
-    }
-    .author-box, .contact-box {
-      background: #f4f6fa;
-      padding: 24px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px #0001;
-      margin: 18px auto;
-      max-width: 650px;
-      text-align: center;
-    }
-    .footer {
-      background: #1e3a8a;
-      color: #fff;
-      text-align: center;
-      padding: 16px;
-      margin-top: 16px;
-    }
-    @media (max-width: 700px) {
-      .header-container, .section, .articles { max-width: 98%; }
-      .gallery-track img { width: 230px; height: 130px; }
-      .article-card img { height: 110px; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
@@ -179,7 +39,6 @@
   </section>
   <!-- Latest Articles -->
   <section class="articles">
-    <!-- Article Card 1 -->
     <div class="article-card">
       <img src="https://cdn.freepixel.com/preview/free-photos-effective-political-campaign-election-text--a-prominent-display-of-the-phrase-one-nation-one-vote-in-preview-1004264752.jpg" alt="One Nation One Election">
       <div class="content">
@@ -188,7 +47,6 @@
         <a href="one-nation-one-election.html" class="read-more">Read More →</a>
       </div>
     </div>
-    <!-- Article Card 2 -->
     <div class="article-card">
       <img src="https://vicepresidentofindia.nic.in/sites/default/files/20230503_2_1.JPG" alt="Vice President Jagdeep Dhankhar">
       <div class="content">
@@ -197,7 +55,6 @@
         <a href="vp-resignation.html" class="read-more">Read More →</a>
       </div>
     </div>
-    <!-- Article Card 3 -->
     <div class="article-card">
       <img src="https://media.assettype.com/freepressjournal/2025-07-19/j1ch2cl0/pg-1-lead-freepik-1-july-20.jpg" alt="जनरेशन Z की नज़र में आज़ादी">
       <div class="content">
@@ -206,7 +63,6 @@
         <a href="Zenz.html" class="read-more">Read More →</a>
       </div>
     </div>
-    <!-- Article Card 4 -->
     <div class="article-card">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt3Q7tDmVwNEFfXnvXHETSRXSG_97l_dHVyg&s" alt="राष्ट्रीय शिक्षा नीति के पाँच साल: उपलब्धियाँ और चुनौतियाँ">
       <div class="content">
@@ -234,8 +90,7 @@
     <h3>📩 Contact Us</h3>
     <div class="contact-box">
       <p>Got queries or feedback? Reach out via email:</p>
-      <a href="mailto:journalindianthe@gmail.com" style="
-        background: #1e3a8a; color: #fff; padding: 10px 24px; border-radius: 24px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 2px 8px #0002;">
+      <a href="mailto:journalindianthe@gmail.com" class="contact-email">
         journalindianthe@gmail.com
       </a>
     </div>
@@ -244,5 +99,6 @@
   <footer class="footer">
     &copy; 2025 The Indian Journal. All Rights Reserved.
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
